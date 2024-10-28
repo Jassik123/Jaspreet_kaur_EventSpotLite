@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+header {
+  background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradient header */
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Fade in effect */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  animation: bounce 1s infinite alternate; /* Bouncing effect for title */
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #4b6cb7; /* Match input border to theme */
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #182848; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.spotlight {
+  margin: 20px 0;
+  background-color: #e2e2e2; /* Light spotlight background */
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* For absolute positioning of the text */
+  overflow: hidden; /* Hide overflow to create sliding effect */
+}
+
+.sliding-text {
+  position: absolute; /* Absolute positioning for sliding */
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: slide 10s linear infinite; /* Slower animation for visibility */
+  font-size: 2rem; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #2a5a8c; /* Text color */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust vertical centering */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%) translateY(-50%); /* Start from outside the left */
+  }
+  50% {
+    transform: translateX(100%) translateY(-50%); /* Move to outside the right */
+  }
+  100% {
+    transform: translateX(-100%) translateY(-50%); /* Reset to start position */
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.main {
+  padding: 20px;
+}
+
+/* Event List item hover effect */
+.event-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
