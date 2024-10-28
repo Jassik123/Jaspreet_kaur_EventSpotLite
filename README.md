@@ -20,7 +20,9 @@ Optimized for both web and mobile views, ensuring a consistent experience across
 Tech Stack:
 
 -Frontend: Built entirely with React.js, ensuring a highly responsive and dynamic interface.
+
 -Styling: CSS-in-JS for modular styling and ease of theme adjustments.
+
 -Deployment: Hosted on Vercel for optimized speed and reliability.
 
 Getting Started
@@ -65,6 +67,8 @@ Check out the live version here: Event Spot Lite
 Future Enhancements:
 
 -Calendar Sync Improvements: Deeper calendar integration, allowing users to sync their event schedule across multiple calendar platforms (Google Calendar, Outlook, etc.).
+
 -Backend and API Development: Introduction of a backend to store event data, manage user authentication, and provide a public API for third-party integrations.
+
 -AI-Powered Recommendations: Personalized event suggestions based on user interests and past RSVPs.
 Enhanced Analytics: Advanced metrics for organizers, offering insights into event reach, RSVP rates, and attendee feedback.
